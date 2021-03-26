@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+.book {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.page {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: calc(100vw - 20px);
+    grid-template-rows: calc(100vh - 20px);
+    background-color: aliceblue;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+.page .page__illustration {
+    max-width: 100%;
+    width: auto;
+    height: 100%
+}
+
+.container-illustration {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 100%;
+}
+
+.page .page__narrative-ballon {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;font-family: 'Balsamiq Sans', cursive;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: max(18px, 1.2vw);
+    line-height: 26px;
+}
+
+.page .page__narrative-ballon.ballon-sm {
+    width: 200px;
+}
+.page .page__narrative-ballon.ballon-md {
+    width: 300px;
+}
+.page .page__narrative-ballon.ballon-lg {
+    width: 600px;
+}
+.page .page__narrative-ballon.ballon-top-left {
+    top: 0;
+    left: 0;
+}
+.page .page__narrative-ballon.ballon-top-right {
+    top:0;
+    right: 0;
+    transform: translate(-100%, 100%);
+}
+.page .page__narrative-ballon.ballon-bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: translate(-100%, -50%);
+}
+.page .page__narrative-ballon.ballon-bottom-left {
+    bottom: 0;
+    left: 0;
+}
